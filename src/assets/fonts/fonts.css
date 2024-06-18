@@ -1,0 +1,27 @@
+/* Flame */
+@font-face {
+    font-family: 'Flame';
+    src: url('Flame-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Flame';
+    src: url('Flame-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Rotonda */
+@font-face {
+    font-family: 'Rotonda';
+    src: url('Rotonda-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Rotonda';
+    src: url('Rotonda-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}

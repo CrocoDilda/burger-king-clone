@@ -1,0 +1,86 @@
+@import './base.css';
+
+:root {
+    --color-main-brown: #502314;
+
+    --color-bg-white: white;
+    --color-bg-white100: #f5ebdc;
+    --color-bg-gray100: #ffffff4d;
+    --color-bg-gray200: #f5ebdc80;
+    --color-bg-gray300: #fcf6ec;
+    --color-bg-orange: #ff6e20;
+    --color-bg-brown100: #32180f;
+    --color-bg-brown200: #bba390d9;
+
+    --color-text-light100: #d7c7b4;
+    --color-text-light200: #f5ebdc;
+    --color-text-light300: #f5ebdbd1;
+    --color-text-black: black;
+    --color-text-green: #3ba55d;
+    --color-text-brown100: #502314d9;
+    --color-text-brown200: #502314;
+    --color-text-brown300: #845f50;
+    --color-text-brown400: #bea393;
+
+    --color-border-gray100: #d7c7b580;
+    --color-border-gray200: #f1f1f199;
+    --color-border-gray300: #ffffff99;
+    --color-border-light100: #d7c7b4;
+    --color-border-light200: #e6d9c8;
+    --color-border-brown100: #87604f;
+    --color-border-brown100: #9e8375;
+
+    --container-width: 1280px;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-bg-white100);
+    font-family: 'Flame';
+    color: var(--color-main-brown);
+    overflow-x: hidden;
+}
+
+#app {
+}
+
+* {
+    &:focus-visible {
+        outline: 2px solid var(--color-main-brown);
+        border-radius: 2px;
+    }
+}
+
+a {
+    &:focus-visible {
+        outline: 2px solid var(--color-main-brown);
+        border-radius: 2px;
+    }
+}
+
+.container {
+    padding: 0 calc((100vw - var(--container-width)) / 2);
+}
+
+button {
+    background-color: transparent;
+}
+
+.bg-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg-brown200);
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 1350px) {
+    .container {
+        padding: 0 50px;
+    }
+}
