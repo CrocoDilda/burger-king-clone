@@ -27,7 +27,6 @@ const tabInvert = () => {
         tabState.value = -1
         document.body.style.overflowY = 'hidden'
     }
-    console.log('сейчас tabState = ' + tabState.value)
 }
 
 provide('tabInvert', tabInvert)

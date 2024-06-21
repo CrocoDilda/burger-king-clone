@@ -5,6 +5,7 @@
 
     --color-bg-white: white;
     --color-bg-white100: #f5ebdc;
+    --color-bg-white200: #ffffff59;
     --color-bg-gray100: #ffffff4d;
     --color-bg-gray200: #f5ebdc80;
     --color-bg-gray300: #fcf6ec;
@@ -17,10 +18,12 @@
     --color-text-light300: #f5ebdbd1;
     --color-text-black: black;
     --color-text-green: #3ba55d;
+    --color-text-green100: #198737;
     --color-text-brown100: #502314d9;
     --color-text-brown200: #502314;
     --color-text-brown300: #845f50;
     --color-text-brown400: #bea393;
+    --color-text-browna500: #bba391;
 
     --color-border-gray100: #d7c7b580;
     --color-border-gray200: #f1f1f199;
@@ -31,6 +34,8 @@
     --color-border-brown100: #9e8375;
 
     --container-width: 1280px;
+
+    --component-options-width: 730px;
 }
 
 html {
@@ -51,6 +56,16 @@ body {
     &:focus-visible {
         outline: 2px solid var(--color-main-brown);
         border-radius: 2px;
+    }
+    &::-webkit-scrollbar {
+        width: 6px; /* ширина всей полосы прокрутки */
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--color-bg-white200);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--color-main-brown); /* цвет бегунка */
+        border-radius: 4px 0 0 4px; /* округлось бегунка */
     }
 }
 

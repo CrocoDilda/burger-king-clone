@@ -1,5 +1,5 @@
 <script setup>
-import Card from './Card.vue'
+import Card from './card-components/Card.vue'
 
 defineProps({
     itemsList: Array,
@@ -13,7 +13,8 @@ defineProps({
         <ul class="cards-list">
             <Card
                 v-for="item in itemsList"
-                :key="item.id"
+                :key="item.itemId"
+                :itemId="item.itemId"
                 :itemName="item.itemName"
                 :itemPrice="item.itemPrice"
                 :itemImageUrl="item.itemImageUrl"

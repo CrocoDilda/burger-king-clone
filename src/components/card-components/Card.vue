@@ -1,13 +1,14 @@
 <script setup>
-import { ref, inject } from 'vue'
-import CardOptions from './CardOptions.vue'
+import { ref, inject, provide } from 'vue'
+import CardAdditionally from './CardAdditionally.vue'
 
 defineProps({
     itemName: String,
     itemPrice: Number,
     itemImageUrl: String,
     itemType: String,
-    tabState: Number
+    tabState: Number,
+    itemId: Number
 })
 
 const flag = ref(false)
@@ -17,23 +18,24 @@ function flagInvert() {
     flag.value = !flag.value
     tabInvert()
 }
+provide('flagInvert', flagInvert)
 </script>
 
 <template>
     <li>
         <button @click="flagInvert()" :tabindex="tabState" class="card">
-            <img class="image" :src="`/public/contant_images/${itemImageUrl}`" :alt="itemType" />
+            <img class="image" :src="`./public/contant_images/${itemImageUrl}`" :alt="itemType" />
             <h3 class="title">{{ itemName }}</h3>
             <div class="description">
-                <p class="price">{{ itemPrice }}</p>
+                <p class="price">{{ itemPrice }} ₽</p>
                 <p class="pseudo-button">Заказать</p>
             </div>
         </button>
     </li>
-    <CardOptions v-if="flag" :flagState="flag" />
+    <CardAdditionally v-if="flag" :imageUrl="itemImageUrl" :itemId="itemId" />
 </template>
 
-<style scroped>
+<style scoped>
 .card {
     display: grid;
     align-items: start;
@@ -62,6 +64,7 @@ function flagInvert() {
 .title {
     font-size: 1.125rem;
     text-align: start;
+    color: var(--color-main-brown);
 }
 
 .description {
@@ -73,6 +76,8 @@ function flagInvert() {
 
 .price {
     font-size: 1.5rem;
+    color: var(--color-main-brown);
+    white-space: nowrap;
 }
 
 .pseudo-button {

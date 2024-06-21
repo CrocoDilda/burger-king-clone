@@ -6,10 +6,10 @@ const emit = defineEmits(['popUpFunction'])
     <div class="wrapper">
         <div @click="() => emit('popUpFunction')" class="bg-filter"></div>
         <div class="dropdown container">
-            <button @click="() => emit('popUpFunction')" class="closed">
+            <button @click="() => emit('popUpFunction')" class="close">
                 <svg
-                    width="16"
-                    height="16"
+                    width="20"
+                    height="20"
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                     class=""
@@ -73,7 +73,7 @@ const emit = defineEmits(['popUpFunction'])
     padding-bottom: 40px;
 }
 
-.closed {
+.close {
     position: absolute;
     padding: 5px;
     top: 33px;

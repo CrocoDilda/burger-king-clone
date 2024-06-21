@@ -1,0 +1,734 @@
+[
+    {
+        "itemId": 1,
+        "itemType": "burger",
+        "itemName": "Ангус По-Итальянски",
+        "itemPrice": 449.99,
+        "itemMass": 313,
+        "itemImageUrl": "656ce198a18ba57483ca7be6c7471e51.webp",
+        "itemDescription": "Твои каникулы в Италии! Внутри этого шикарного бургера — мраморная говядина Абердин Ангус на огне под вкуснейшим итальянским соусом Песто, кусочки твёрдого сыра Пармезан и много овощей: салат Айсберг, сочные томаты, красный маринованный лук — всё под сырным соусом на булочке бриошь. Одним словом — феличита!",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1163.9
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 278
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 17.3
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.8
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.2
+            }
+        ]
+    },
+    {
+        "itemId": 2,
+        "itemType": "burger",
+        "itemName": "Острый Ангус По-Итальянски",
+        "itemPrice": 459.99,
+        "itemMass": 327,
+        "itemImageUrl": "ff57452f24755b4aa0878a38a4e4558a.webp",
+        "itemDescription": "Острая тема! Мраморная говядина Абердин Ангус на огне под вкуснейшим соусом Песто с добавлением жгучего томатного, кусочки твёрдого сыра Пармезан и овощи: салат Айсберг, сочные томаты и красный маринованный лук — всё под сырным соусом на булочке бриошь.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1152.3
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 275.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 16.8
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.3
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.9
+            }
+        ]
+    },
+    {
+        "itemId": 3,
+        "itemType": "burger",
+        "itemName": "Воппер По-Итальянски",
+        "itemPrice": 329.99,
+        "itemMass": 285,
+        "itemImageUrl": "1ae30e724c6aa44eedbe3827aa070b8c.webp",
+        "itemDescription": "Твои каникулы в Италии! А это наш фирменный Воппер в итальянском стиле: 100%-я говядина, приготовленная на огне, изысканный итальянский соус Песто, любимый сыр Чеддер, свежие томаты, огурчики маринованные, салат Айсберг и лук. Феличита!",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1101.8
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 263.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 15.8
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 10.2
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.6
+            }
+        ]
+    },
+    {
+        "itemId": 4,
+        "itemType": "Roll",
+        "itemName": "Песто Шримп Ролл",
+        "itemPrice": 299.99,
+        "itemMass": 182,
+        "itemImageUrl": "bb16a1039d266b554141b51e36c4779e.webp",
+        "itemDescription": "Твои каникулы в Италии! Три большие золотистые королевские креветки под изумительным соусом Песто и любимый сыр Чеддер. А ещё внутри овощи: томат, маринованные огурчики, салат Айсберг и лук — на румяной тортилье гриль.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 874.2
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 208.8
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 8.2
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 6.6
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 26.4
+            }
+        ]
+    },
+    {
+        "itemId": 5,
+        "itemType": "burger",
+        "itemName": "Ангус По-Итальянски",
+        "itemPrice": 449.99,
+        "itemMass": 313,
+        "itemImageUrl": "656ce198a18ba57483ca7be6c7471e51.webp",
+        "itemDescription": "Твои каникулы в Италии! Внутри этого шикарного бургера — мраморная говядина Абердин Ангус на огне под вкуснейшим итальянским соусом Песто, кусочки твёрдого сыра Пармезан и много овощей: салат Айсберг, сочные томаты, красный маринованный лук — всё под сырным соусом на булочке бриошь. Одним словом — феличита!",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1163.9
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 278
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 17.3
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.8
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.2
+            }
+        ]
+    },
+    {
+        "itemId": 6,
+        "itemType": "burger",
+        "itemName": "Острый Ангус По-Итальянски",
+        "itemPrice": 459.99,
+        "itemMass": 327,
+        "itemImageUrl": "ff57452f24755b4aa0878a38a4e4558a.webp",
+        "itemDescription": "Острая тема! Мраморная говядина Абердин Ангус на огне под вкуснейшим соусом Песто с добавлением жгучего томатного, кусочки твёрдого сыра Пармезан и овощи: салат Айсберг, сочные томаты и красный маринованный лук — всё под сырным соусом на булочке бриошь.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1152.3
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 275.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 16.8
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.3
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.9
+            }
+        ]
+    },
+    {
+        "itemId": 7,
+        "itemType": "burger",
+        "itemName": "Воппер По-Итальянски",
+        "itemPrice": 329.99,
+        "itemMass": 285,
+        "itemImageUrl": "1ae30e724c6aa44eedbe3827aa070b8c.webp",
+        "itemDescription": "Твои каникулы в Италии! А это наш фирменный Воппер в итальянском стиле: 100%-я говядина, приготовленная на огне, изысканный итальянский соус Песто, любимый сыр Чеддер, свежие томаты, огурчики маринованные, салат Айсберг и лук. Феличита!",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1101.8
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 263.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 15.8
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 10.2
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.6
+            }
+        ]
+    },
+    {
+        "itemId": 8,
+        "itemType": "Roll",
+        "itemName": "Песто Шримп Ролл",
+        "itemPrice": 299.99,
+        "itemMass": 182,
+        "itemImageUrl": "bb16a1039d266b554141b51e36c4779e.webp",
+        "itemDescription": "Твои каникулы в Италии! Три большие золотистые королевские креветки под изумительным соусом Песто и любимый сыр Чеддер. А ещё внутри овощи: томат, маринованные огурчики, салат Айсберг и лук — на румяной тортилье гриль.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 874.2
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 208.8
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 8.2
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 6.6
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 26.4
+            }
+        ]
+    },
+    {
+        "itemId": 9,
+        "itemType": "burger",
+        "itemName": "Ангус По-Итальянски",
+        "itemPrice": 449.99,
+        "itemMass": 313,
+        "itemImageUrl": "656ce198a18ba57483ca7be6c7471e51.webp",
+        "itemDescription": "Твои каникулы в Италии! Внутри этого шикарного бургера — мраморная говядина Абердин Ангус на огне под вкуснейшим итальянским соусом Песто, кусочки твёрдого сыра Пармезан и много овощей: салат Айсберг, сочные томаты, красный маринованный лук — всё под сырным соусом на булочке бриошь. Одним словом — феличита!",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1163.9
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 278
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 17.3
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.8
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.2
+            }
+        ]
+    },
+    {
+        "itemId": 10,
+        "itemType": "burger",
+        "itemName": "Острый Ангус По-Итальянски",
+        "itemPrice": 459.99,
+        "itemMass": 327,
+        "itemImageUrl": "ff57452f24755b4aa0878a38a4e4558a.webp",
+        "itemDescription": "Острая тема! Мраморная говядина Абердин Ангус на огне под вкуснейшим соусом Песто с добавлением жгучего томатного, кусочки твёрдого сыра Пармезан и овощи: салат Айсберг, сочные томаты и красный маринованный лук — всё под сырным соусом на булочке бриошь.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1152.3
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 275.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 16.8
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.3
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.9
+            }
+        ]
+    },
+    {
+        "itemId": 11,
+        "itemType": "burger",
+        "itemName": "Воппер По-Итальянски",
+        "itemPrice": 329.99,
+        "itemMass": 285,
+        "itemImageUrl": "1ae30e724c6aa44eedbe3827aa070b8c.webp",
+        "itemDescription": "Твои каникулы в Италии! А это наш фирменный Воппер в итальянском стиле: 100%-я говядина, приготовленная на огне, изысканный итальянский соус Песто, любимый сыр Чеддер, свежие томаты, огурчики маринованные, салат Айсберг и лук. Феличита!",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1101.8
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 263.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 15.8
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 10.2
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 19.6
+            }
+        ]
+    },
+    {
+        "itemId": 12,
+        "itemType": "Roll",
+        "itemName": "Песто Шримп Ролл",
+        "itemPrice": 299.99,
+        "itemMass": 182,
+        "itemImageUrl": "bb16a1039d266b554141b51e36c4779e.webp",
+        "itemDescription": "Твои каникулы в Италии! Три большие золотистые королевские креветки под изумительным соусом Песто и любимый сыр Чеддер. А ещё внутри овощи: томат, маринованные огурчики, салат Айсберг и лук — на румяной тортилье гриль.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 874.2
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 208.8
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 8.2
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 6.6
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 26.4
+            }
+        ]
+    },
+    {
+        "itemId": 13,
+        "itemName": "Ангус Пармеджано",
+        "itemPrice": 399.99,
+        "itemMass": 320,
+        "itemImageUrl": "fa620f01e8df16d0dbc7ca09c93e7e49.webp",
+        "itemDescription": "Наслаждайся каждым сырным укусом! Нежный мраморный бифштекс Абердин Ангус, пикантный Пармезан и щедрая порция соуса Пармеджано! А ещё внутри салат Айсберг, маринованный красный лучок и свежие томаты на мягкой булочке бриошь.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1177.5
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 281.3
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 17.5
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 12.2
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 18.4
+            }
+        ]
+    },
+    {
+        "itemId": 14,
+        "itemName": "Тройной Воппер",
+        "itemPrice": 409.99,
+        "itemMass": 460,
+        "itemImageUrl": "bc1bc7c16f715212d21f7dd34652d318.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1256.1
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 300
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 21.1
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 14.3
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 13.3
+            }
+        ]
+    },
+    {
+        "itemId": 15,
+        "itemName": "Острый Чикен Тар-Тар",
+        "itemPrice": 219.99,
+        "itemMass": 460,
+        "itemImageUrl": "11c56d5c59aab08e066cce8e45541c70.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 926.3
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 221.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 9.7
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.1
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 21.7
+            }
+        ]
+    },
+    {
+        "itemId": 16,
+        "itemName": "Острый Воппер с сыром",
+        "itemPrice": 314.99,
+        "itemMass": 295,
+        "itemImageUrl": "7a9c8d37461db17747123b5b921427c7.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1121.4
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 267.8
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 16.9
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 10.5
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 18.3
+            }
+        ]
+    },
+    {
+        "itemId": 17,
+        "itemName": "Ангус Пармеджано",
+        "itemPrice": 399.99,
+        "itemMass": 320,
+        "itemImageUrl": "fa620f01e8df16d0dbc7ca09c93e7e49.webp",
+        "itemDescription": "Наслаждайся каждым сырным укусом! Нежный мраморный бифштекс Абердин Ангус, пикантный Пармезан и щедрая порция соуса Пармеджано! А ещё внутри салат Айсберг, маринованный красный лучок и свежие томаты на мягкой булочке бриошь.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1177.5
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 281.3
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 17.5
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 12.2
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 18.4
+            }
+        ]
+    },
+    {
+        "itemId": 18,
+        "itemName": "Тройной Воппер",
+        "itemPrice": 409.99,
+        "itemMass": 460,
+        "itemImageUrl": "bc1bc7c16f715212d21f7dd34652d318.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1256.1
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 300
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 21.1
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 14.3
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 13.3
+            }
+        ]
+    },
+    {
+        "itemId": 19,
+        "itemName": "Острый Чикен Тар-Тар",
+        "itemPrice": 219.99,
+        "itemMass": 460,
+        "itemImageUrl": "11c56d5c59aab08e066cce8e45541c70.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 926.3
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 221.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 9.7
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.1
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 21.7
+            }
+        ]
+    },
+    {
+        "itemId": 20,
+        "itemName": "Острый Воппер с сыром",
+        "itemPrice": 314.99,
+        "itemMass": 295,
+        "itemImageUrl": "7a9c8d37461db17747123b5b921427c7.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1121.4
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 267.8
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 16.9
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 10.5
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 18.3
+            }
+        ]
+    },
+    {
+        "itemId": 21,
+        "itemName": "Ангус Пармеджано",
+        "itemPrice": 399.99,
+        "itemMass": 320,
+        "itemImageUrl": "fa620f01e8df16d0dbc7ca09c93e7e49.webp",
+        "itemDescription": "Наслаждайся каждым сырным укусом! Нежный мраморный бифштекс Абердин Ангус, пикантный Пармезан и щедрая порция соуса Пармеджано! А ещё внутри салат Айсберг, маринованный красный лучок и свежие томаты на мягкой булочке бриошь.",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1177.5
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 281.3
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 17.5
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 12.2
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 18.4
+            }
+        ]
+    },
+    {
+        "itemId": 22,
+        "itemName": "Тройной Воппер",
+        "itemPrice": 409.99,
+        "itemMass": 460,
+        "itemImageUrl": "bc1bc7c16f715212d21f7dd34652d318.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1256.1
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 300
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 21.1
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 14.3
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 13.3
+            }
+        ]
+    },
+    {
+        "itemId": 23,
+        "itemName": "Острый Чикен Тар-Тар",
+        "itemPrice": 219.99,
+        "itemMass": 460,
+        "itemImageUrl": "11c56d5c59aab08e066cce8e45541c70.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 926.3
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 221.2
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 9.7
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 11.1
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 21.7
+            }
+        ]
+    },
+    {
+        "itemId": 24,
+        "itemName": "Острый Воппер с сыром",
+        "itemPrice": 314.99,
+        "itemMass": 295,
+        "itemImageUrl": "7a9c8d37461db17747123b5b921427c7.webp",
+        "itemDescription": "Теперь ещё больше соуса! Внутри три вкуснейших бифштекса, приготовленных на огне, сочные томаты, свежий салат Айсберг, щедрая порция майонеза, хрустящие маринованные огурчики и свежий лук на нежной булочке с кунжутом",
+        "itemNutritionalValue": [
+            {
+                "nutritionalName": "кДж",
+                "nutritionalValue": 1121.4
+            },
+            {
+                "nutritionalName": "кКал",
+                "nutritionalValue": 267.8
+            },
+            {
+                "nutritionalName": "Жиры (г)",
+                "nutritionalValue": 16.9
+            },
+            {
+                "nutritionalName": "Белки (г)",
+                "nutritionalValue": 10.5
+            },
+            {
+                "nutritionalName": "Углеводы (г)",
+                "nutritionalValue": 18.3
+            }
+        ]
+    }
+]
