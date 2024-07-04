@@ -97,7 +97,10 @@ const changeIndexIvent = inject('changeIndexIvent')
 
 .combo {
     display: grid;
+    align-content: space-around;
     gap: 12px;
     width: 100%;
+    height: 100%;
+    min-height: 480px;
 }
 </style>

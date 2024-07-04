@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Котлета",
+        "itemId": 1,
+        "image": "26a5aa6e9eb8af7c0bff5b92daa3ae1a.png",
+        "price": 169.99,
+        "maxValue": 3
+    },
+    {
+        "name": "Острый соус",
+        "itemId": 2,
+        "image": "5f0600434f088ef50b93e8ba71020eec.png",
+        "price": 9.99,
+        "maxValue": 10
+    },
+    {
+        "name": "Сыр-Бекон",
+        "itemId": 3,
+        "image": "e7e985888a62ff75c41ea9ec34d826d2.png",
+        "price": 49.99,
+        "maxValue": 10
+    },
+    {
+        "name": "Чеддер",
+        "itemId": 4,
+        "image": "69926128f4621cd1cdf3efd4faef3930.png",
+        "price": 19.99,
+        "maxValue": 10
+    },
+    {
+        "name": "Двойной Чеддер",
+        "itemId": 5,
+        "image": "457529aaf93e5482e7e6b5602e1d9edb.png",
+        "price": 34.99,
+        "maxValue": 10
+    },
+    {
+        "name": "Сыр «Палермо»",
+        "itemId": 6,
+        "image": "38e134e16a2066eff32a9f1692f46f8c.png",
+        "price": 39.99,
+        "maxValue": 3
+    },
+    {
+        "name": "Бекон",
+        "itemId": 7,
+        "image": "19c3494f920bd4fa35c85d52894d70a6.png",
+        "price": 39.99,
+        "maxValue": 10
+    },
+    {
+        "name": "Помидор",
+        "itemId": 8,
+        "image": "ab070141324aee63f8500f6641f322bc.png",
+        "price": 12.99,
+        "maxValue": 3
+    },
+    {
+        "name": "Хрустящий лук",
+        "itemId": 9,
+        "image": "09d24b5623a2cec7ca35f0d5643f63d3.png",
+        "price": 29.99,
+        "maxValue": 1
+    }
+]

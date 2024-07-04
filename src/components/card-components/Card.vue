@@ -51,7 +51,7 @@ provide('flagInvert', flagInvert)
     &:hover {
         background-color: var(--color-border-light200);
         box-shadow: 0px 0px 10px var(--color-main-brown);
-        transform: scale(1.02);
+        transform: scale(1.01);
     }
 }
 

@@ -33,9 +33,24 @@ provide('tabInvert', tabInvert)
 </script>
 
 <template>
+    <h1 class="warning">
+        Внимание! Данный проект сделан искючительно в учебных целях и несёт за собой следующие
+        задачи: практиковать фреймворк Vue.js, улучшить UX и адаптив оригинального сайта
+        burger-king, т.к. у них это сделанно так себе. <br />
+        4.07.24 в оригинальном сайте бк произошло обновление, немного поменялся дизайн, но не стоит
+        переживать, косяков там всё равно дофига. Мне лень переделывать уже готовые элементы, да и
+        цели сделать идеальный клон нет. Поэтому я слеплю химеру.
+    </h1>
     <HeaderItem :tabState="tabState" :basketIsDisabled="true" @tabInvert="tabInvert" />
     <HomeView :tabState="tabState" />
     <FooterItem />
 </template>
 
-<style scoped></style>
+<style scoped>
+.warning {
+    text-align: center;
+    background-color: #fa4747;
+    padding: 20px;
+    font-size: 1rem;
+}
+</style>

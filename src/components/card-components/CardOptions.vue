@@ -3,17 +3,41 @@
 <script setup>
 import { inject, ref, onMounted } from 'vue'
 import axios from 'axios'
+import SupplementsList from './SupplementsList.vue'
+import QuantityChange from '../controls/QuantityChange.vue'
 
 const props = defineProps({
     imageUrl: String,
     itemId: Number
 })
-// флажок дропдауна
+
 const dropdownFlag = ref(true)
+const massCoefficient = ref(1)
+const massCoefficientFlag = ref(false)
+const quantityProduct = ref(1)
+
+// функия изменения коэффициента массы
+function changeMassCoefficient(value) {
+    if (value === 1) {
+        massCoefficient.value = itemsList.value[0].itemMass / 100
+        massCoefficientFlag.value = true
+    } else if (value === 0) {
+        massCoefficient.value = 1
+        massCoefficientFlag.value = false
+    }
+    console.log(massCoefficientFlag.value)
+    console.log(value)
+}
+
+function calcNutrinicalValue(elementIndex) {
+    return (
+        itemsList.value[0].itemNutritionalValue[elementIndex].nutritionalValue *
+        massCoefficient.value
+    ).toFixed(1)
+}
 
 // Данные о продукте
 const itemsList = ref([])
-console.log(itemsList.value[0])
 onMounted(async () => {
     try {
         const { data } = await axios.get(
@@ -23,7 +47,6 @@ onMounted(async () => {
     } catch (error) {
         console.log(error)
     }
-    console.log(itemsList.value[0])
 })
 const flagInvert = inject('flagInvert')
 </script>
@@ -69,10 +92,10 @@ const flagInvert = inject('flagInvert')
                     ></path>
                 </svg>
             </button>
-            <div class="header">
+            <header class="header">
                 <h4 class="main--title">{{ itemsList[0].itemName }}</h4>
                 <p class="head--massa">вес {{ itemsList[0].itemMass }} гр</p>
-            </div>
+            </header>
             <div class="wrapper">
                 <div class="description">
                     <img class="description--image" :src="`./public/contant_images/${imageUrl}`" />
@@ -81,10 +104,12 @@ const flagInvert = inject('flagInvert')
                         <p class="description--text">{{ itemsList[0].itemDescription }}</p>
                     </div>
                     <div class="description--control">
-                        <button class="control--button">
+                        <button @click="dropdownFlag = !dropdownFlag" class="control--button">
                             <h5 class="title">Пищевая ценность:</h5>
                             <svg
-                                class="description--icon"
+                                :class="
+                                    dropdownFlag ? 'description--icon' : 'description--icon_active'
+                                "
                                 viewBox="0 0 12 18"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -98,40 +123,79 @@ const flagInvert = inject('flagInvert')
                         </button>
                         <div v-if="dropdownFlag" class="dropdown">
                             <div class="dropdown--buttons">
-                                <button class="doropdown--button doropdown--button_active">
+                                <button
+                                    @click="changeMassCoefficient(0)"
+                                    :class="
+                                        !massCoefficientFlag
+                                            ? 'dropdown--button_active ' + 'dropdown--button'
+                                            : 'dropdown--button'
+                                    "
+                                >
                                     100 г
                                 </button>
-                                <button class="doropdown--button">
+                                <button
+                                    @click="changeMassCoefficient(1)"
+                                    :class="
+                                        massCoefficientFlag
+                                            ? 'dropdown--button_active ' + 'dropdown--button'
+                                            : 'dropdown--button'
+                                    "
+                                >
                                     {{ itemsList[0].itemMass }} гр
                                 </button>
                             </div>
-                            <ul class="dropdown--wrapper">
+                            <ul v-if="dropdownFlag" class="dropdown--wrapper">
                                 <li class="dropdown--item">
-                                    <p class="item--name">кДж</p>
-                                    <p class="item--value">12312</p>
+                                    <p class="item--name">
+                                        {{ itemsList[0].itemNutritionalValue[0].nutritionalName }}
+                                    </p>
+                                    <p class="item--value">
+                                        {{ calcNutrinicalValue(0) }}
+                                    </p>
                                 </li>
                                 <li class="dropdown--item">
-                                    <p class="item--name">кКал</p>
-                                    <p class="item--value">12312</p>
+                                    <p class="item--name">
+                                        {{ itemsList[0].itemNutritionalValue[1].nutritionalName }}
+                                    </p>
+                                    <p class="item--value">
+                                        {{ calcNutrinicalValue(1) }}
+                                    </p>
                                 </li>
                                 <li class="dropdown--item">
-                                    <p class="item--name">Жиры</p>
-                                    <p class="item--value">2332</p>
+                                    <p class="item--name">
+                                        {{ itemsList[0].itemNutritionalValue[2].nutritionalName }}
+                                    </p>
+                                    <p class="item--value">
+                                        {{ calcNutrinicalValue(2) }}
+                                    </p>
                                 </li>
                                 <li class="dropdown--item">
-                                    <p class="item--name">Белки</p>
-                                    <p class="item--value">1223</p>
+                                    <p class="item--name">
+                                        {{ itemsList[0].itemNutritionalValue[3].nutritionalName }}
+                                    </p>
+                                    <p class="item--value">
+                                        {{ calcNutrinicalValue(3) }}
+                                    </p>
                                 </li>
                                 <li class="dropdown--item">
-                                    <p class="item--name">Углеводы</p>
-                                    <p class="item--value">2131</p>
+                                    <p class="item--name">
+                                        {{ itemsList[0].itemNutritionalValue[4].nutritionalName }}
+                                    </p>
+                                    <p class="item--value">
+                                        {{ calcNutrinicalValue(4) }}
+                                    </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <SupplementsList />
             </div>
-            <div class="footer"></div>
+            <footer class="footer">
+                <p class="footer--text">Итого</p>
+                <QuantityChange :bigSize="true" v-model="quantityProduct" :maxQuantity="99" />
+                <button class="footer--button">789.89 Руб</button>
+            </footer>
         </div>
     </div>
 </template>
@@ -146,8 +210,8 @@ const flagInvert = inject('flagInvert')
 .loading--icon {
     height: 50px;
     width: 50px;
-    animation-name: rotate-icon;
-    animation-duration: 1s;
+    animation-name: rotate-arrow;
+    animation-duration: 0.8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -160,6 +224,7 @@ const flagInvert = inject('flagInvert')
     right: 15px;
     fill: var(--color-border-light100);
     transition: fill 0.2s;
+    z-index: 2;
     &:hover {
         fill: var(--color-text-brown300);
     }
@@ -169,8 +234,6 @@ const flagInvert = inject('flagInvert')
     position: fixed;
     left: calc((100vw - var(--component-options-width)) / 2);
     top: calc((100vh - 550px) / 2);
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     width: var(--component-options-width);
     height: 550px;
@@ -180,16 +243,25 @@ const flagInvert = inject('flagInvert')
     overflow: hidden;
 }
 
+.contant {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
 .header {
+    background-color: var(--color-bg-white100);
+    height: 58px;
+    z-index: 1;
     display: flex;
     align-items: end;
     gap: 16px;
-    position: static;
-    padding: 24px 32px 8px;
+    padding: 24px 32px 10px;
     &::after {
         content: '';
         position: absolute;
-        top: 60px;
+        top: 58px;
         left: 0;
         width: 100%;
         height: 1px;
@@ -218,7 +290,7 @@ const flagInvert = inject('flagInvert')
 
 .wrapper {
     padding: 32px 24px;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 .description {
@@ -244,11 +316,13 @@ const flagInvert = inject('flagInvert')
     width: 16px;
     fill: var(--color-text-brown300);
     transform: rotate(90deg);
-    &:hover {
-        animation-name: rotate-arrow;
-        animation-duration: 0.4s;
-        animation-fill-mode: forwards;
-    }
+}
+
+.description--icon_active {
+    height: 16px;
+    width: 16px;
+    fill: var(--color-text-brown300);
+    transform: rotate(270deg);
 }
 
 .description--image {
@@ -265,9 +339,6 @@ const flagInvert = inject('flagInvert')
     color: var(--color-text-brown300);
 }
 
-.description--control {
-}
-
 .control--button {
     display: flex;
     align-items: center;
@@ -277,7 +348,9 @@ const flagInvert = inject('flagInvert')
 }
 
 .dropdown {
+    margin-top: 8px;
 }
+
 .dropdown--buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -285,14 +358,16 @@ const flagInvert = inject('flagInvert')
     border-radius: 30px;
     outline: 1px solid var(--color-text-light100);
 }
-.doropdown--button {
+
+.dropdown--button {
     font-size: 12px;
     padding: 4px 16px;
     color: var(--color-main-brown);
     border-radius: 30px;
+    transition: 0.2;
 }
 
-.doropdown--button_active {
+.dropdown--button_active {
     background-color: var(--color-main-brown);
     color: var(--color-text-light200);
 }
@@ -300,29 +375,53 @@ const flagInvert = inject('flagInvert')
 .dropdown--wrapper {
     display: flex;
     gap: 8px;
+    margin-top: 12px;
 }
+
 .dropdown--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
 }
+
 .item--name {
+    font-family: 'Rotonda';
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-browna600);
 }
+
 .item--value {
 }
 
-@keyframes rotate-icon {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
+.footer {
+    position: relative;
+    background-color: var(--color-bg-white100);
+    height: 77px;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    padding: 24px 32px 10px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-border-light100);
     }
 }
 
 @keyframes rotate-arrow {
     0% {
-        transform: rotate(90deg);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(270deg);
+        transform: rotate(360deg);
     }
 }
 </style>
